@@ -8,7 +8,17 @@ import { Quantica } from './quantica';
   styleUrls: ['./quantica-details.component.css']
 })
 export class QuanticaDetailsComponent implements OnInit {
-
+  @Input() quoty: Quote;
+  @Output() isRead = new EventEmitter<boolean>();
+  deleteQuote(read:boolean){
+    this.isRead.emit(read);
+  }
+  upvote(){
+    this.quoty.likes+=1;
+  }
+  downvote(){
+    this.quoty.dislikes+=1;
+  }
   constructor() { }
 
   ngOnInit(): void {
