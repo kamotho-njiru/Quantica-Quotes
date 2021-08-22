@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GoalDetailComponent } from './goal-detail.component';
+import { QuanticaDetailsComponent } from './quantica-details.component';
 
-describe('GoalDetailComponent', () => {
-  let component: GoalDetailComponent;
-  let fixture: ComponentFixture<GoalDetailComponent>;
+describe('QuanticaDetailsComponent', () => {
+  let component: QuanticaDetailsComponent;
+  let fixture: ComponentFixture<QuanticaDetailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GoalDetailComponent ]
+      declarations: [ QuanticaDetailsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GoalDetailComponent);
+    fixture = TestBed.createComponent(QuanticaDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
