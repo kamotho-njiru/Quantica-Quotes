@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { QuanticaQuotesComponent } from './quantica-quotes/quantica-quotes.component';
 import { GoalDetailComponent } from './quantica-detail/quantica-detail.component';
 import { QuanticaDetailsComponent } from './quantica-details/quantica-details.component';
+import { ImpactactionDirective } from './impactaction.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuanticaQuotesComponent,
     GoalDetailComponent,
-    QuanticaDetailsComponent
+    QuanticaDetailsComponent,
+    ImpactactionDirective
   ],
   imports: [
     BrowserModule
