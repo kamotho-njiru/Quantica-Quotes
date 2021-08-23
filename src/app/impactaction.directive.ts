@@ -5,6 +5,6 @@ import { Directive } from '@angular/core';
 })
 export class ImpactactionDirective {
 
-  constructor() { }
+  constructor(private elem:ElementRef) { }
 
 }
