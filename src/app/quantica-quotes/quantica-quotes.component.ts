@@ -16,5 +16,9 @@ export class Quantica-quotesComponent implements OnInit{
     new QuanticaQuotes(4,'Kamau','Mathematics','Mathematics is the queen of the science','Gauss Johnna', new Date(2021,8,22),0,0),
     new QuanticaQuotes(5,'Kim','Philosophy','Dont grieve Anything you lose comes round in another form','Mario Antoinette',new Date(2021,8,22),0,0
     new QuanticaQuotes(6,'Antony','Wisdom','I have seen all I have heard all I have forgotten all','Kamotho Njiru', new Date(2021,8,22),0,0),
-  ]
+  ];
+  get sortQuotes() {
+    return this.quotes.sort((a, b) => {
+      return <any>new Date(b.datePosted) - <any>new Date(a.datePosted);
+    });
 }
