@@ -14,3 +14,8 @@ export class ImpactactionDirective {
   @HostListener("dblclick") onDoubleClicks(){
     this.textDeco("None")
 }
+private textDeco(action:string){
+  this.elem.nativeElement.style.color=action;
+}
+
+}
