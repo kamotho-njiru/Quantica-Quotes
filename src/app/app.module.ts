@@ -7,6 +7,7 @@ import { GoalDetailComponent } from './quantica-detail/quantica-detail.component
 import { QuanticaDetailsComponent } from './quantica-details/quantica-details.component';
 import { ImpactactionDirective } from './impactaction.directive';
 import { DateCountPipe } from './date-count.pipe';
+import { QuanticaQuotesFormComponent } from './quantica-quotes-form/quantica-quotes-form.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DateCountPipe } from './date-count.pipe';
     GoalDetailComponent,
     QuanticaDetailsComponent,
     ImpactactionDirective,
-    DateCountPipe
+    DateCountPipe,
+    QuanticaQuotesFormComponent
   ],
   imports: [
     BrowserModule
